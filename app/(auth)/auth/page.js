@@ -113,6 +113,15 @@ export default function Auth() {
                 Sign in
               </button>
             </div>
+
+            <p className="text-white md:-mx-40 pt-10">
+              Knight Holdings: A versatile investment firm specializing in
+              Construction, Outsourcing, IT, Healthcare, Food & Beverage, and
+              Real Estate. Our experienced team excels in identifying
+              high-growth opportunities, taking a hands-on approach to maximize
+              potential, and delivering long-term value with integrity and
+              excellence.
+            </p>
           </form>
         </div>
       </div>
