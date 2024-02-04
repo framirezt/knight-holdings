@@ -52,7 +52,14 @@ export default function Auth() {
           />
         </div>
 
-        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm pb-12">
+          <p className="text-white md:-mx-40 pb-10">
+            A versatile investment firm specializing in Construction,
+            Outsourcing, IT, Healthcare, Food & Beverage, and Real Estate. Our
+            experienced team excels in identifying high-growth opportunities,
+            taking a hands-on approach to maximize potential, and delivering
+            long-term value with integrity and excellence.
+          </p>
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label
@@ -69,7 +76,7 @@ export default function Auth() {
                   autoComplete="off"
                   value={name}
                   onChange={nameChange}
-                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -99,7 +106,7 @@ export default function Auth() {
                   autoComplete="off"
                   value={password}
                   onChange={passwordChange}
-                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -108,20 +115,11 @@ export default function Auth() {
               <button
                 type="submit"
                 onClick={(e) => signIn(e)}
-                className="flex w-full justify-center rounded-md bg-black px-3 py-2.5 font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
+                className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
               >
                 Sign in
               </button>
             </div>
-
-            <p className="text-white md:-mx-40 pt-10">
-              Knight Holdings: A versatile investment firm specializing in
-              Construction, Outsourcing, IT, Healthcare, Food & Beverage, and
-              Real Estate. Our experienced team excels in identifying
-              high-growth opportunities, taking a hands-on approach to maximize
-              potential, and delivering long-term value with integrity and
-              excellence.
-            </p>
           </form>
         </div>
       </div>
