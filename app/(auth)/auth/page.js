@@ -46,7 +46,7 @@ export default function Auth() {
       <div className="fixed flex min-h-full min-w-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 z-10  backdrop-blur-lg">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
-            className="mx-auto h-32 w-auto"
+            className="mx-auto h-40 md:h-44 w-auto"
             src={logo}
             alt="Your Company"
           />
@@ -57,7 +57,7 @@ export default function Auth() {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium leading-6 text-white"
+                className="block text-base font-medium leading-6 text-white"
               >
                 Username
               </label>
@@ -69,7 +69,7 @@ export default function Auth() {
                   autoComplete="off"
                   value={name}
                   onChange={nameChange}
-                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -78,7 +78,7 @@ export default function Auth() {
               <div className="flex items-center justify-between">
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium leading-6 text-white"
+                  className="block text-base font-medium leading-6 text-white"
                 >
                   Password
                 </label>
@@ -99,7 +99,7 @@ export default function Auth() {
                   autoComplete="off"
                   value={password}
                   onChange={passwordChange}
-                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
+                  className="block w-full bg-[rgb(255,255,255,0.4)]  rounded-md border-0 py-2.5 text-gray-900 shadow-sm ring-2 ring-inset ring-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-black sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -108,7 +108,7 @@ export default function Auth() {
               <button
                 type="submit"
                 onClick={(e) => signIn(e)}
-                className="flex w-full justify-center rounded-md bg-black px-3 py-2 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-md bg-black px-3 py-2.5 font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
               >
                 Sign in
               </button>
