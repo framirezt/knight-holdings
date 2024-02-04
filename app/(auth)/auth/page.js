@@ -32,7 +32,7 @@ export default function Auth() {
 
   function signIn(e) {
     e.preventDefault();
-    if (name !== "tupac" || password !== "12345") return;
+    if (name !== "tupac" || password !== "Delacruz@00") return;
     dispatch(authActions.login({ user: "Tupac", token: new Date().getTime() }));
   }
 
