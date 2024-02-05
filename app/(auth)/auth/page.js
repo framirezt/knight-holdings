@@ -43,7 +43,7 @@ export default function Auth() {
         alt=""
         className="h-screen w-screen object-cover fixed saturate-50 z-0 "
       />
-      <div className="fixed flex min-h-full min-w-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 z-10  backdrop-blur-lg">
+      <div className="fixed flex min-h-full min-w-full flex-1 flex-col justify-center px-6 py-8 lg:px-8 z-10  backdrop-blur-lg">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
             className="mx-auto h-40 md:h-44 w-auto"
@@ -52,8 +52,8 @@ export default function Auth() {
           />
         </div>
 
-        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm pb-12">
-          <p className="text-white md:-mx-40 pb-10">
+        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-xs pb-48">
+          <p className="text-white md:-mx-40 pb-10 text-center">
             A versatile investment firm specializing in Construction,
             Outsourcing, IT, Healthcare, Food & Beverage, and Real Estate. Our
             experienced team excels in identifying high-growth opportunities,

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==== scrollbar  =====*/
+*::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --bg1: #ffffff;
   --bg2: #f5f6fb;

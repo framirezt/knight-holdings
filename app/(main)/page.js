@@ -19,6 +19,9 @@ import f12 from "@/images/12.png";
 import BottomSlider from "@/components/BottomSlider";
 import { useState } from "react";
 import Link from "next/link";
+import { ArrowLeftStartOnRectangleIcon } from "@heroicons/react/24/outline";
+import { useDispatch } from "react-redux";
+import { authActions } from "@/store/reduxStore";
 
 export default function Home() {
   const [openBottomSlider, setOpenBottomSlider] = useState(false);
@@ -27,7 +30,7 @@ export default function Home() {
   const industries = [
     {
       icon: icon5,
-      title: "Real estate Dev",
+      title: "Real estate Development",
       companies: [
         {
           logo: f5,
@@ -42,7 +45,7 @@ export default function Home() {
       companies: [
         {
           logo: f6,
-          link: "www.roofingsolutionsla.com",
+          link: "www.roofingsolutions.com",
           text: "With a passion for delivering top-notch services and a commitment to using only the finest materials, Roofing Solutions is dedicated to providing its clients with a seamless and stress-free experience from start to finish. From flat roofs to steep-slope, their team of highly skilled professionals has the expertise to tackle even the most challenging projects with ease. Whether you're looking to repair a leak, replace your old roof, or upgrade to the latest energy-efficient technology, this company is your trusted partner for all your commercial roofing needs.",
         },
         {
@@ -103,6 +106,8 @@ export default function Home() {
 
   const company = companies.find((c) => c.link === sliderData);
 
+  const dispatch = useDispatch();
+
   return (
     <>
       <Image
@@ -114,7 +119,7 @@ export default function Home() {
       {/* for onclick */}
       <BottomSlider open={openBottomSlider} setOpen={setOpenBottomSlider}>
         {/* card */}
-        <div className=" rounded-xl w-full px-0 py-0 grid md:grid-cols-3 gap-4 text-white">
+        <div className=" rounded-xl w-full px-0 py-0 grid md:grid-cols-3 gap-4 text-black">
           <div className="flex flex-col items-center ">
             <Image
               className=" h-44 w-auto "
@@ -151,6 +156,14 @@ export default function Home() {
       </BottomSlider>
 
       <div className="relative flex min-h-full w-screen flex-1 flex-col px-6 py-0 lg:px-8 z-10 ">
+        <button
+          onClick={() => dispatch(authActions.logout())}
+          className="absolute top-4 right-4 z-50 bg-[rgb(255,255,255,0.4)] text-white px-3 py-1 rounded-md flex flex-row items-center justify-center gap-2 border border-white"
+        >
+          <ArrowLeftStartOnRectangleIcon className="h-4 w-4" />
+          Log out
+        </button>
+
         <div className="sm:mx-auto sm:w-full ">
           {/* logo */}
           <Image
@@ -162,7 +175,7 @@ export default function Home() {
           <p className="text-center text-white mt-24 md:mt-52 text-lg md:text-nowrap">
             <b>Knight Holdings</b> is a diversified INVESTMENT FIRM <br />
             with a focus on{" "}
-            <span className="text-gray-600 font-medium">5 industries</span>
+            <span className="text-gray-600 font-medium">5 industries:</span>
           </p>
 
           {/* industries container */}

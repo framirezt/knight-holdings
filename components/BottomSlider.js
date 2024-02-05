@@ -65,7 +65,7 @@ export default function BottomSlider({
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex h-80 flex-col overflow-y-scroll bg-blue-700   opacity-70 py-6 shadow-xl rounded-2xl">
+                  <div className="flex h-80 flex-col overflow-y-scroll bg-white  py-6 shadow-xl rounded-2xl">
                     <div className="relative mt-6 flex-1 px-4 sm:px-6">
                       {children}
                     </div>
