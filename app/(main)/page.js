@@ -160,7 +160,6 @@ export default function Home() {
           onClick={() => dispatch(authActions.logout())}
           className="absolute top-4 right-4 z-50 bg-[rgb(255,255,255,0.4)] text-white px-3 py-1 rounded-md flex flex-row items-center justify-center gap-2 border border-white"
         >
-          <ArrowLeftStartOnRectangleIcon className="h-4 w-4" />
           Log out
         </button>
 
