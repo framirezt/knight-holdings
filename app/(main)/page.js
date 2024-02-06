@@ -158,7 +158,7 @@ export default function Home() {
       <div className="relative flex min-h-full w-screen flex-1 flex-col px-6 py-0 lg:px-8 z-10 ">
         <button
           onClick={() => dispatch(authActions.logout())}
-          className="absolute top-4 right-4 z-50 bg-[rgb(255,255,255,0.4)] text-white px-3 py-1 rounded-md flex flex-row items-center justify-center gap-2 border border-white"
+          className="absolute top-4 right-4 z-50  text-white px-3 py-1 rounded-md flex flex-row items-center justify-center gap-2 "
         >
           Log out
         </button>
@@ -182,7 +182,7 @@ export default function Home() {
             {industries.map((i, k) => (
               <div key={k} className="flex flex-col items-center pb-16">
                 <Image
-                  className="mx-auto h-28 w-auto"
+                  className="mx-auto h-28  w-auto"
                   src={i.icon}
                   alt="Your Company"
                 />
