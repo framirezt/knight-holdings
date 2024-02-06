@@ -43,7 +43,7 @@ export default function Auth() {
         alt=""
         className="h-screen w-screen object-cover fixed saturate-50 z-0 "
       />
-      <div className="fixed flex min-h-full min-w-full flex-1 flex-col justify-center px-6 py-8 lg:px-8 z-10  backdrop-blur-lg">
+      <div className="absolute flex min-h-full min-w-full flex-1 flex-col justify-center px-8 py-8 lg:px-8 z-10  backdrop-blur-lg">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <Image
             className="mx-auto h-40 md:h-44 w-auto"
@@ -52,7 +52,7 @@ export default function Auth() {
           />
         </div>
 
-        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-xs pb-48">
+        <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-[14rem] pb-48">
           <p className="text-white md:-mx-40 pb-10 text-center">
             A versatile investment firm specializing in Construction,
             Outsourcing, IT, Healthcare, Food & Beverage, and Real Estate. Our
@@ -111,11 +111,11 @@ export default function Auth() {
               </div>
             </div>
 
-            <div>
+            <div className="pb-24">
               <button
                 type="submit"
                 onClick={(e) => signIn(e)}
-                className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base"
+                className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 font-semibold leading-6 text-white shadow-sm hover:bg-white hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 text-base "
               >
                 Sign in
               </button>

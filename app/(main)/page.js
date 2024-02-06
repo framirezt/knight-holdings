@@ -13,7 +13,7 @@ import f6 from "@/images/6.png";
 import f7 from "@/images/7.png";
 import f8 from "@/images/8.png";
 import f9 from "@/images/9.png";
-import f10 from "@/images/10.png";
+import f10 from "@/images/f10.png";
 import f11 from "@/images/11.png";
 import f12 from "@/images/12.png";
 import BottomSlider from "@/components/BottomSlider";
@@ -93,7 +93,7 @@ export default function Home() {
       companies: [
         {
           logo: f9,
-          link: "https://www.hooters.cr/",
+          link: "www.hooters.cr/",
           text: "With a commitment to delivering great food, cold drinks, and a fun atmosphere, Hooters franchise for Costa Rica is dedicated to providing its customers with a one-of-a-kind dining experience. With a team of friendly and engaging servers, you'll always feel right at home. Experience the fun and flavor of Hooters! Whether you're watching the game with friends, grabbing a bite on your lunch break, or celebrating a special occasion, this franchise is the place to be. At Hooters, life is better with wings!",
         },
       ],
@@ -126,7 +126,7 @@ export default function Home() {
               src={company?.logo || ""}
               alt="Your Company"
             />
-            <Link href={"https://" + company?.link || ""}>
+            <Link target="_blank" href={"https://" + company?.link || ""}>
               <p>{company?.link}</p>
             </Link>
           </div>
